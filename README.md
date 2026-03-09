@@ -1,31 +1,60 @@
-# Hash Tables - C Programming
+# Holberton School — Binary Trees
 
-This project covers the implementation of basic hash table operations using C.  
-It focuses on creating a custom hash table data structure and implementing common functions such as insert, retrieve, print, and delete.
+![Holberton](https://img.shields.io/badge/Holberton-School-red?style=flat-square) ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c)
 
-## 📁 Project Structure
+## Description
 
-- `0-hash_table_create.c`: Creates a new hash table.
-- `1-djb2.c`: Hash function using the **djb2** algorithm.
-- `2-key_index.c`: Maps a key to an index in the hash table array.
-- `3-hash_table_set.c`: Adds or updates a key/value pair in the hash table.
-- `4-hash_table_get.c`: Retrieves the value associated with a key.
-- `5-hash_table_print.c`: Prints all key/value pairs in the hash table.
-- `6-hash_table_delete.c`: Deletes the hash table and frees memory.
+This repository explores **Binary Trees** and their variants in C. It covers tree construction, traversal algorithms, and operations on Binary Search Trees (BST), AVL Trees, and Max Binary Heaps.
 
-## 📚 Concepts Covered
+## Data Structure
 
-- Hash functions and collisions
-- Handling collisions using chaining (linked lists)
-- Memory allocation and deallocation in C
-- Structs and pointers
+```c
+typedef struct binary_tree_s
+{
+    int n;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
+} binary_tree_t;
+```
 
-## 🧪 Compilation
+## Topics Covered
 
-Each file can be compiled using:
-```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hash_table_test
+| Topic | Description |
+|-------|-------------|
+| Tree creation & insertion | Build nodes and link them |
+| Tree traversal | Pre-order, In-order, Post-order, Level-order |
+| Tree measurement | Height, depth, size, balance factor |
+| Binary Search Tree (BST) | Insertion, search, deletion |
+| AVL Tree | Self-balancing BST |
+| Max Binary Heap | Priority queue structure |
 
-👤 Author
-Kevin Voka
-GitHub: kevin10v
+## Key Functions
+
+- `binary_tree_node` — Create a new node
+- `binary_tree_insert_left` / `binary_tree_insert_right` — Insert children
+- `binary_tree_height` — Measure tree height
+- `binary_tree_size` — Count total nodes
+- `binary_tree_is_full` / `binary_tree_is_perfect` / `binary_tree_is_complete`
+- `binary_tree_levelorder` — BFS traversal
+
+## Learning Objectives
+
+- Understand what a binary tree is and its properties
+- Differentiate between BST, AVL, and Max Heap
+- Implement traversal algorithms (DFS & BFS)
+- Calculate height, depth, size, and balance factor
+- Understand time complexity of tree operations
+
+## Technologies
+
+| Tool | Version |
+|------|---------|
+| Ubuntu | 22.04 LTS |
+| GCC | 12.x |
+| Betty Linter | Latest |
+
+## Author
+
+**Kevin Voka** — [GitHub](https://github.com/kevinvoka)
+
